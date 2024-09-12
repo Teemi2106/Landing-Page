@@ -115,6 +115,8 @@
   color: white;
   padding: 1vmin 2vmin;
   margin-top: 2vmin;
+  border: none;
+  border-radius: 3px;
 }
 
 /* MEDIA QUERIES */
