@@ -8,6 +8,7 @@
   align-items: center;
   padding: 3vmin;
   background-color: transparent;
+  overflow-x: hidden;
 }
 
 #header ul {
@@ -36,13 +37,15 @@
   cursor: pointer;
 }
 
-/* Mobile Header */
 #headerMobile {
-  display: none; /* Hidden on desktop by default */
+  display: none;
   width: 100%;
   background-color: rgba(231, 236, 255, 1);
   padding: 3vmin;
   transform-origin: top;
+  position: relative;
+  z-index: 1100;
+  overflow-x: hidden;
 }
 
 #mobileNavBar {
@@ -64,7 +67,6 @@
   color: rgba(17, 27, 71, 1);
 }
 
-/* Mobile Menu Hidden by default */
 .mobileMenu {
   display: none;
   flex-direction: column;
@@ -74,17 +76,21 @@
   background-color: rgba(231, 236, 255, 1);
   width: 100%;
   text-align: center;
-  opacity: 0; /* Hidden by default */
-  transform: scaleY(0); /* Collapsed by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+
+  opacity: 0;
+  transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Mobile Menu Open */
 .mobileMenu.open {
-  display: flex; /* Display when menu is toggled */
-  opacity: 1; /* Make visible */
-  transform: scaleY(1); /* Expand vertically */
+  display: flex;
+  opacity: 1;
+  transform: scaleY(1);
 }
 
 .mobileMenu ul {
