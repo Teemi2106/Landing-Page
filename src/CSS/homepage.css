@@ -1,0 +1,299 @@
+#homepage {
+  height: 100vh;
+  background-image: url(../assets/image\ copy.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 60%;
+  font-family: "Roboto", sans-serif;
+  max-width: 100%;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5vw;
+  overflow-x: hidden;
+}
+img {
+  padding: 3vmin;
+  margin: 3vmin;
+  width: 100%;
+}
+
+#content {
+  width: 40%;
+  padding: 5vmin;
+  position: relative;
+  top: -10vmin;
+  left: 20vmin;
+}
+
+#content div {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vmin;
+}
+
+#content button {
+  width: 25vmin;
+  border: 1px solid rgba(17, 27, 71, 1);
+  background-color: transparent;
+  color: rgba(17, 27, 71, 1);
+}
+@media all and (max-width: 750px) {
+  #content div {
+    width: 100%;
+    flex-direction: column;
+    margin-right: 3vmin;
+  }
+  #hero {
+    margin-right: 3vmin;
+    height: fit-content;
+
+    justify-content: center;
+  }
+  #homepage {
+    background-size: 100%;
+  }
+  #content {
+    width: 100vw;
+  }
+}
+
+#content div :first-child {
+  background-color: rgba(17, 27, 71, 1);
+  color: white;
+}
+
+#section2,
+#section3,
+#section4 {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10vmin;
+}
+
+#content2,
+#section4 div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3vmin;
+}
+
+#icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icon div {
+  display: flex;
+  flex-direction: column;
+  gap: 3vmin;
+}
+
+#section3 div {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5vmin;
+}
+
+#section3 div img {
+  width: 100%;
+}
+
+#section4 {
+  height: 100vh;
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section4 div {
+  width: 50%;
+  text-align: center;
+}
+@media all and (max-width: 750px) {
+  #section4 div {
+    width: 80%;
+    text-align: center;
+  }
+  #section3 {
+    margin-left: 5vmin;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(231, 236, 255, 1);
+  min-height: 10vh;
+  padding: 2vmin 10vmin;
+}
+
+#company,
+#comp2 {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 3vmin;
+  overflow-x: hidden;
+
+  justify-content: space-between;
+}
+
+#comp2 ul {
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  color: rgba(146, 158, 204, 1);
+}
+
+#footerIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+/* RESPONSIVE STYLING */
+@media screen and (max-width: 1024px) {
+  /* Tablet layout */
+  #content {
+    width: 50%;
+    left: 10vmin;
+    top: 0;
+  }
+
+  #section2,
+  #section3,
+  #section4 {
+    padding: 5vmin 3vmin;
+  }
+
+  #icon {
+    flex-direction: column;
+    gap: 3vmin;
+  }
+
+  #section3 div {
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Mobile layout */
+  #hero {
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    padding: 0 3vw;
+  }
+
+  #content {
+    width: 80%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 2vmin;
+  }
+
+  #content button {
+    width: 40vw;
+    margin: 1vmin 0;
+  }
+
+  #section2,
+  #section3,
+  #section4 {
+    flex-direction: column;
+    height: auto;
+    gap: 5vmin;
+    padding: 5vmin;
+    overflow-x: hidden;
+  }
+
+  #section3 div,
+  #section4 div {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  #icon {
+    flex-direction: column;
+    gap: 3vmin;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 5vmin 3vmin;
+  }
+
+  #comp2 ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+#footerIcons img {
+  width: 10vmin;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  /* Small mobile layout */
+  #content {
+    width: 90%;
+  }
+
+  #content h1 {
+    font-size: 5vw;
+  }
+
+  #content p {
+    font-size: 4vw;
+  }
+
+  #content button {
+    width: 50vw;
+    padding: 2vmin;
+  }
+
+  #section2,
+  #section3 {
+    padding: 2vmin;
+    gap: 3vmin;
+  }
+
+  #icon div h2 {
+    font-size: 4vw;
+  }
+
+  footer {
+    padding: 4vmin;
+  }
+
+  #comp2 ul {
+    flex-direction: column;
+    gap: 2vmin;
+    font-size: 13vmin;
+  }
+
+  #comp2 {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,35 @@
+/* General Styles */
+.scroll-animation {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: 100%; /* Ensure full width */
+  padding: 0; /* Ensure no padding */
+  margin: 0; /* Ensure no margin */
+  box-sizing: border-box; /* Make sure padding/margin adjustments don't shrink the element */
+}
+
+.scroll-animation.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-animation.slide-up {
+  opacity: 1;
+  transform: translateX(-30px);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.scroll-animation.zoom-in {
+  opacity: 1;
+  transform: scale(0.8);
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+/* Hidden by default */
+.scroll-animation {
+  transform: translateX(30px); /* or other starting transformations */
+}
+
+.scroll-animation.zoom-in {
+  transform: scale(1);
+}

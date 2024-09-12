@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Desktop Header */
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vmin;
+  background-color: transparent;
+}
+
+#header ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vmin;
+  list-style-type: none;
+  color: rgba(80, 95, 152, 1);
+}
+
+#header h1 {
+  color: rgba(55, 68, 126, 1);
+  font-family: "Roboto";
+  font-weight: 900;
+}
+
+#header button {
+  background-color: rgba(17, 27, 71, 1);
+  color: white;
+  width: 25vmin;
+}
+
+#header ul li {
+  cursor: pointer;
+}
+
+/* Mobile Header */
+#headerMobile {
+  display: none; /* Hidden on desktop by default */
+  width: 100%;
+  background-color: rgba(231, 236, 255, 1);
+  padding: 3vmin;
+  transform-origin: top;
+}
+
+#mobileNavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#headerMobile h1 {
+  font-family: "Roboto", sans-serif;
+  color: rgba(55, 68, 126, 1);
+}
+
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 6vmin;
+  cursor: pointer;
+  color: rgba(17, 27, 71, 1);
+}
+
+/* Mobile Menu Hidden by default */
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vmin;
+  padding: 3vmin;
+  background-color: rgba(231, 236, 255, 1);
+  width: 100%;
+  text-align: center;
+  opacity: 0; /* Hidden by default */
+  transform: scaleY(0); /* Collapsed by default */
+  transform-origin: top;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Mobile Menu Open */
+.mobileMenu.open {
+  display: flex; /* Display when menu is toggled */
+  opacity: 1; /* Make visible */
+  transform: scaleY(1); /* Expand vertically */
+}
+
+.mobileMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mobileMenu ul li {
+  margin: 1vmin 0;
+  cursor: pointer;
+  color: rgba(80, 95, 152, 1);
+}
+
+.mobileMenu button {
+  background-color: rgba(17, 27, 71, 1);
+  color: white;
+  padding: 1vmin 2vmin;
+  margin-top: 2vmin;
+}
+
+/* MEDIA QUERIES */
+
+/* Mobile View */
+@media (max-width: 768px) {
+  #header {
+    display: none; /* Hide desktop header on mobile */
+  }
+
+  #headerMobile {
+    display: flex; /* Show mobile header */
+    flex-direction: column;
+  }
+}
