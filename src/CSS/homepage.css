@@ -1,4 +1,4 @@
-main {
+/* main {
   width: 100%;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -14,7 +14,7 @@ main {
 footer {
   scroll-snap-align: center;
 }
-
+ */
 #hero,
 #section2,
 #section3,
