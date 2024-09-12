@@ -106,7 +106,13 @@ const Homepage = () => {
               <h1 style={{ color: "rgba(9, 17, 51, 1)", fontSize: "4.5vmin" }}>
                 Light, Fast & Powerful
               </h1>
-              <p style={{ color: "rgba(111, 124, 178, 1)", fontSize: "2vmin" }}>
+              <p
+                style={{
+                  color: "rgba(111, 124, 178, 1)",
+                  fontSize: "2vmin",
+                  width: "90%",
+                }}
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 tenetur vel, unde mollitia debitis cum eius ipsam doloribus
                 corrupti incidunt nisi, sapiente odit eum iste beatae blanditiis
@@ -148,7 +154,13 @@ const Homepage = () => {
               <h1 style={{ color: "rgba(9, 17, 51, 1)", fontSize: "4.5vmin" }}>
                 Light, Fast & Powerful
               </h1>
-              <p style={{ color: "rgba(111, 124, 178, 1)", fontSize: "2vmin" }}>
+              <p
+                style={{
+                  color: "rgba(111, 124, 178, 1)",
+                  fontSize: "2vmin",
+                  width: "90%",
+                }}
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
                 tenetur vel, unde mollitia debitis cum eius ipsam doloribus
                 corrupti incidunt nisi, sapiente odit eum iste beatae blanditiis
@@ -170,7 +182,7 @@ const Homepage = () => {
         </ScrollAnimation>
         <ScrollAnimation animationType="zoom-in">
           <section id="section4">
-            <div style={{ padding: "3vmin" }}>
+            <div style={{ padding: "3vmin", margin: "5vmin" }}>
               <h2 style={{ color: "rgba(9, 17, 51, 1)" }}>
                 A Price To Suit Everyone
               </h2>
