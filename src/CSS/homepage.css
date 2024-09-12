@@ -15,6 +15,7 @@
   justify-content: center;
   padding: 0 5vw;
   overflow-x: hidden;
+  width: 60%;
 }
 img {
   padding: 3vmin;
@@ -23,7 +24,7 @@ img {
 }
 
 #content {
-  width: 40%;
+  width: 100%;
   padding: 5vmin;
   position: relative;
   top: -10vmin;
@@ -53,14 +54,14 @@ img {
   #hero {
     margin-right: 3vmin;
     height: fit-content;
-
+    width: 100%;
     justify-content: center;
   }
   #homepage {
     background-size: 100%;
   }
   #content {
-    width: 100vw;
+    width: 100%;
   }
 }
 
@@ -78,6 +79,7 @@ img {
   align-items: center;
   padding: 10vmin;
   width: 100%;
+  overflow: hidden;
 }
 
 #content2,

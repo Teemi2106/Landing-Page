@@ -45,7 +45,6 @@
   transform-origin: top;
   position: relative;
   z-index: 1100;
-  overflow-x: hidden;
 }
 
 #mobileNavBar {
