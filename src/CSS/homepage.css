@@ -1,3 +1,42 @@
+main {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+#homepage,
+#hero,
+#section2,
+#section3,
+#section4,
+footer {
+  scroll-snap-align: center;
+}
+
+#hero,
+#section2,
+#section3,
+#section4 {
+  height: 100vh;
+}
+
+#homepage,
+#hero,
+#section2,
+#section3,
+#section4 {
+  width: 100%;
+}
+
+#hero,
+#section2,
+#section3,
+#section4 {
+  overflow: hidden;
+}
+
 #homepage {
   height: 100vh;
   background-image: url(../assets/image\ copy.png);

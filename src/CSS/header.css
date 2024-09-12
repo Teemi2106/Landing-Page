@@ -32,11 +32,16 @@
   color: white;
   width: 25vmin;
   border: none;
-  padding: 1vmin;
+  padding: 0.5vmin 1vmin;
+  border-radius: 2px;
 }
 
 #header ul li {
   cursor: pointer;
+}
+
+#header ul li:hover {
+  color: rgba(55, 68, 126, 1);
 }
 
 #headerMobile {

@@ -31,8 +31,8 @@ const Homepage = () => {
                 A possimus laboriosam in.
               </p>
               <div>
-                <button>Purchase UI Kit</button>
-                <button>Learn More</button>
+                <button style={{ borderRadius: "3px" }}>Purchase UI Kit</button>
+                <button style={{ borderRadius: "3px" }}>Learn More</button>
               </div>
             </div>
           </section>
@@ -154,6 +154,7 @@ const Homepage = () => {
                   border: "1px solid black",
                   backgroundColor: "rgba(17, 27, 71, 1)",
                   color: "white",
+                  borderRadius: "3px",
                 }}
               >
                 Purchase Now
@@ -186,6 +187,7 @@ const Homepage = () => {
                   border: "1px solid rgba(17, 27, 71, 1)",
                   padding: "1vmin 2vmin",
                   color: "white",
+                  borderRadius: "3px",
                 }}
               >
                 Purchase Now
@@ -198,7 +200,15 @@ const Homepage = () => {
             <p style={{ color: "rgba(147, 158, 164, 1)", fontSize: "2vmin" }}>
               ©2023 Yourcompany
             </p>
-            <h1 style={{ fontSize: "4vmin" }}>Landing</h1>
+            <h1
+              style={{
+                fontSize: "4vmin",
+                color: "rgba(55, 68, 126, 1)",
+                fontWeight: "bold",
+              }}
+            >
+              Landing
+            </h1>
             <button
               style={{
                 backgroundColor: "rgba(17, 27, 71, 1)",
@@ -206,6 +216,7 @@ const Homepage = () => {
                 padding: "1vmin 2vmin",
                 color: "white",
                 fontSize: "2vmin",
+                borderRadius: "2px",
               }}
             >
               Purchase Now
@@ -214,9 +225,9 @@ const Homepage = () => {
           <hr />
           <div id="comp2">
             <ul style={{ fontSize: "3vmin" }}>
-              <li>Home</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li style={{ cursor: "pointer" }}>Home</li>
+              <li style={{ cursor: "pointer" }}>About</li>
+              <li style={{ cursor: "pointer" }}>Contact</li>
             </ul>
             <div id="footerIcons">
               {" "}
