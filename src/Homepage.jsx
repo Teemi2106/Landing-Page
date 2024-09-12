@@ -156,7 +156,7 @@ const Homepage = () => {
               </p>
               <button
                 style={{
-                  width: "25vmin",
+                  minWidth: "25vmin",
                   border: "1px solid black",
                   backgroundColor: "rgba(17, 27, 71, 1)",
                   color: "white",
